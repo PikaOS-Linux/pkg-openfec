@@ -5,6 +5,7 @@ add-apt-repository ppa:pikaos/pika
 add-apt-repository ppa:kubuntu-ppa/backports
 # Clone Upstream
 git clone https://github.com/roc-streaming/openfec -b v1.4.2.9
+rm -rfv ./openfec/debian
 cp -rvf ./debian ./openfec/
 cd ./openfec
 
